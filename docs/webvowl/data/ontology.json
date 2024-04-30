@@ -1,0 +1,1229 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey" ],
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "labels" : {
+      "undefined" : "Flight Satisfaction Survey Ontology - FSSO"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Verification",
+      "en" : "Verification"
+    },
+    "comment" : {
+      "en" : "Processes to verify the authenticity of comments to ensure they are from genuine passengers."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Origin",
+      "en" : "Origin"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Faro,_Portugal",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Faro"
+      }
+    } ],
+    "comment" : {
+      "en" : "Departure airport or city for the flight."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat",
+      "en" : "Seat"
+    },
+    "comment" : {
+      "en" : "Details about the seating on the flight, including class (e.g., economy, business) and seat features."
+    },
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entertainment",
+      "en" : "Entertainment"
+    },
+    "comment" : {
+      "en" : "Available entertainment options during the flight, including in-flight movies, music, and games."
+    },
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightEntity",
+      "en" : "FlightEntity"
+    },
+    "subClasses" : [ "23", "7", "4", "24" ],
+    "comment" : {
+      "en" : "Represents an individual flight, including details such as departure, arrival, duration, and aircraft type."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AirlineEntity",
+      "en" : "AirlineEntity"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Rayner",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "Rayner"
+      }
+    } ],
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "en" : "Represents an airline company or carrier that operates flights. Includes information about airlines’ name."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight",
+      "en" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "vuelo2"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "vuelo1"
+      }
+    } ],
+    "subClasses" : [ "28", "29" ],
+    "comment" : {
+      "en" : "Includes all specific details about the flight, such as flight origin, destination, and aircraft used."
+    },
+    "id" : "4",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airline",
+      "en" : "Airline"
+    },
+    "comment" : {
+      "en" : "The airline company offering the flight, responsible for all flight operations."
+    },
+    "id" : "5",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review",
+      "en" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "Reveiw1"
+      }
+    } ],
+    "subClasses" : [ "10", "9", "1", "27", "32", "13", "15", "33" ],
+    "comment" : {
+      "en" : "Associates a review with the specific flight that it evaluates."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Destination",
+      "en" : "Destination"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Luton",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Luton"
+      }
+    } ],
+    "subClasses" : [ "51" ],
+    "comment" : {
+      "en" : "Arrival airport or city for the flight."
+    },
+    "id" : "23",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service"
+    },
+    "comment" : {
+      "en" : "Any service provided during the flight, such as meals, beverages, and additional assistance."
+    },
+    "id" : "13",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassengerEntity",
+      "en" : "PassengerEntity"
+    },
+    "subClasses" : [ "47", "42", "45" ],
+    "comment" : {
+      "en" : "Represents an individual passenger. Contains information about type of traveler and feedback related to flights."
+    },
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OverallRating",
+      "en" : "OverallRating"
+    },
+    "comment" : {
+      "en" : "Score given to the flight based on various criteria such as comfort, service, and punctuality."
+    },
+    "id" : "15",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommentTitle",
+      "en" : "CommentTitle"
+    },
+    "comment" : {
+      "en" : "Title of the comment, summarizing the main point or sentiment expressed."
+    },
+    "id" : "33",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Connectivity",
+      "en" : "Connectivity"
+    },
+    "comment" : {
+      "en" : "Availability of connectivity options like WiFi, USB ports, and in-seat power supplies."
+    },
+    "id" : "27",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comment",
+      "en" : "Comment"
+    },
+    "comment" : {
+      "en" : "Specific opinions and comments about the flight, provided by passengers or authors"
+    },
+    "id" : "32",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "en" : "Aircraft"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://es.dbpedia.org/page/Boeing_737",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Boeing_737-800"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://es.dbpedia.org/page/Boeing_737",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Boeing_737_900"
+      }
+    } ],
+    "comment" : {
+      "en" : "Specific to the type of airplane used for the flight, including model and capacity."
+    },
+    "id" : "24",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger",
+      "en" : "Passenger"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "María"
+      }
+    } ],
+    "comment" : {
+      "en" : "Information about the people flying, including personal details like age and frequent flyer status."
+    },
+    "id" : "47",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VerifiedFlight",
+      "en" : "VerifiedFlight"
+    },
+    "comment" : {
+      "en" : "Indicates the flight is verified by some passenger"
+    },
+    "id" : "28",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommededFlight",
+      "en" : "RecommendedFlight"
+    },
+    "comment" : {
+      "en" : "Indicates whether the passenger would recommend the flight to others."
+    },
+    "id" : "29",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PopularDestinationFlight",
+      "en" : "PopularDestinationFlight"
+    },
+    "comment" : {
+      "en" : "Indicates that a destination is frequently selected by travellers."
+    },
+    "id" : "51",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Autor",
+      "en" : "Author"
+    },
+    "comment" : {
+      "en" : "The person who writes and submits a comment about the flight. Can be a passenger."
+    },
+    "id" : "45",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeOfTraveler",
+      "en" : "TypeOfTraveler"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Family_Leisure",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "Family_Leisure"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Economy_Class",
+      "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+      "labels" : {
+        "IRI-based" : "Economy_Class"
+      }
+    } ],
+    "comment" : {
+      "en" : "Categories of travelers such as business, leisure, or others, indicating the purpose of travel."
+    },
+    "id" : "42",
+    "superClasses" : [ "43" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy",
+    "inverse" : "6",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "OperatedBy",
+      "en" : "OperatedBy"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the airline operating a flight."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "3"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "13",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "13",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "9",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "1",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "13",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "15",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "10",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "9",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "15",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "13",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "9",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "43",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType",
+    "inverse" : "48",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "IsTravelerType",
+      "en" : "IsTravelerType"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Indicates the type of traveller that the individual is."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "IsPassengerOf",
+      "en" : "IsPassengerOf"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Indicates flights on which a passenger has been on a flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "Reviews",
+      "en" : "Reviews"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Associates a review with the specific flight that it evaluates."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "50"
+  }, {
+    "range" : "2",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "43",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "23",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "2",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel",
+    "inverse" : "63",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "AirplaneModel",
+      "en" : "AirplaneModel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the model of aircraft in which the flight was conducted."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger",
+    "inverse" : "49",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "HasPassenger",
+      "en" : "hasPassenger"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates that a specific passenger was on a flight."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the rating that has been given in the review."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "range" : "4",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "en" : "hasDate"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates the date of  the review publication date."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "68"
+  }, {
+    "range" : "8",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "4",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "25",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "8",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "en" : "hasCountry"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Represents the country of residence of the passenger."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy",
+    "inverse" : "50",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "IsReviewedBy",
+      "en" : "IsReviewedBy"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Associates a flight with a specific review provided by a passenger."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "IsOriginOf",
+      "en" : "IsOriginOf"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Indicates that a geographic location is the departure point for a flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo",
+    "inverse" : "80",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "FliesTo",
+      "en" : "FliesTo"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the destination airport or city for the flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "OperatesFlight",
+      "en" : "OperatesFlight"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Indicates flights operated by an airline"
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasVerification",
+      "en" : "hasVerification"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Indicates the review has been verified"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "range" : "27",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "10",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "IsTypeOfTraveler",
+      "en" : "IsTypeOfTraveler"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Indicates the type of passenger that is"
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "48"
+  }, {
+    "range" : "15",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "9",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "13",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "1",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "27",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "10",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "42",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "WereConductedUsing",
+      "en" : "WereConductedUsing"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Indicates the flights that were conducted using a specific model of aircraft."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "IsDestinationOf",
+      "en" : "IsDestinationOf"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Indicates that a geographic location is the arrival point for a flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom",
+    "inverse" : "78",
+    "baseIri" : "http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "FliesFrom",
+      "en" : "FliesFrom"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the departure airport or city for the flight."
+    },
+    "attributes" : [ "asymmetric", "object" ],
+    "id" : "92"
+  } ]
+}

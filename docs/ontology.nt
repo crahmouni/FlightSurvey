@@ -1,0 +1,576 @@
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Satisfaction Survey Ontology - FSSO" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the model of aircraft in which the flight was conducted."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.w3.org/2000/01/rdf-schema#label> "AirplaneModel"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the departure airport or city for the flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.w3.org/2000/01/rdf-schema#label> "FliesFrom"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the destination airport or city for the flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "FliesTo"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a specific passenger was on a flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#HasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassenger"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a geographic location is the arrival point for a flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsDestinationOf> <http://www.w3.org/2000/01/rdf-schema#label> "IsDestinationOf"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a geographic location is the departure point for a flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsOriginOf> <http://www.w3.org/2000/01/rdf-schema#label> "IsOriginOf"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates flights on which a passenger has been on a flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.w3.org/2000/01/rdf-schema#label> "IsPassengerOf"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a flight with a specific review provided by a passenger."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.w3.org/2000/01/rdf-schema#label> "IsReviewedBy"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of traveller that the individual is."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.w3.org/2000/01/rdf-schema#label> "IsTravelerType"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of passenger that is"@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "IsTypeOfTraveler"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the airline operating a flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "OperatedBy"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates flights operated by an airline"@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.w3.org/2000/01/rdf-schema#label> "OperatesFlight"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a review with the specific flight that it evaluates."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reviews> <http://www.w3.org/2000/01/rdf-schema#label> "Reviews"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the flights that were conducted using a specific model of aircraft."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#WereConductedUsing> <http://www.w3.org/2000/01/rdf-schema#label> "WereConductedUsing"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the country of residence of the passenger."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the date of  the review publication date."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating that has been given in the review."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasRating"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the review has been verified"@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> <http://www.w3.org/2000/01/rdf-schema#label> "hasVerification"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific to the type of airplane used for the flight, including model and capacity."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "The airline company offering the flight, responsible for all flight operations."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company or carrier that operates flights. Includes information about airlines’ name."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity> <http://www.w3.org/2000/01/rdf-schema#label> "AirlineEntity"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor> <http://www.w3.org/2000/01/rdf-schema#comment> "The person who writes and submits a comment about the flight. Can be a passenger."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Autor> <http://www.w3.org/2000/01/rdf-schema#label> "Author"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific opinions and comments about the flight, provided by passengers or authors"@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the comment, summarizing the main point or sentiment expressed."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle> <http://www.w3.org/2000/01/rdf-schema#label> "CommentTitle"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Availability of connectivity options like WiFi, USB ports, and in-seat power supplies."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Connectivity"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Arrival airport or city for the flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "Available entertainment options during the flight, including in-flight movies, music, and games."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes all specific details about the flight, such as flight origin, destination, and aircraft used."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an individual flight, including details such as departure, arrival, duration, and aircraft type."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> <http://www.w3.org/2000/01/rdf-schema#label> "FlightEntity"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FlightEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Departure airport or city for the flight."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Score given to the flight based on various criteria such as comfort, service, and punctuality."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "OverallRating"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the people flying, including personal details like age and frequent flyer status."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an individual passenger. Contains information about type of traveler and feedback related to flights."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> <http://www.w3.org/2000/01/rdf-schema#label> "PassengerEntity"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a destination is frequently selected by travellers."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight> <http://www.w3.org/2000/01/rdf-schema#label> "PopularDestinationFlight"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the passenger would recommend the flight to others."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight> <http://www.w3.org/2000/01/rdf-schema#label> "RecommendedFlight"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a review with the specific flight that it evaluates."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#comment> "Details about the seating on the flight, including class (e.g., economy, business) and seat features."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat> <http://www.w3.org/2000/01/rdf-schema#label> "Seat"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Any service provided during the flight, such as meals, beverages, and additional assistance."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PassengerEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Categories of travelers such as business, leisure, or others, indicating the purpose of travel."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "TypeOfTraveler"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification> <http://www.w3.org/2000/01/rdf-schema#comment> "Processes to verify the authenticity of comments to ensure they are from genuine passengers."@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification> <http://www.w3.org/2000/01/rdf-schema#label> "Verification"@en .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the flight is verified by some passenger"@en .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight> <http://www.w3.org/2000/01/rdf-schema#label> "VerifiedFlight"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Boeing_737" .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Aircraft> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://es.dbpedia.org/page/Boeing_737" .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Economy_Class
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Economy_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Economy_Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Family_Leisure
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Family_Leisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Family_Leisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#TypeOfTraveler> .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Origin> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Faro,_Portugal" .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Luton" .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Passenger> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsPassengerOf> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsTravelerType> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Economy_Class> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#María> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasCountry> "Spain" .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Rayner
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Rayner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Rayner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirlineEntity> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Rayner> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OperatesFlight> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Review> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasDate> "03-02-2024" .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> "5.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737_900> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Reveiw1> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> "4.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo1> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#AirplaneModel> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Boeing_737-800> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesFrom> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Luton> .
+<http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#vuelo2> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Faro> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2002/07/owl#Thing> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Verification> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Service> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Seat> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#OverallRating> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Entertainment> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Connectivity> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#CommentTitle> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Comment> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#dest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#%22Faro%22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#%22Faro%22> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Destination> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#dest> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#FliesTo> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#PopularDestinationFlight> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid21 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#arguments> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#rating> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#rating> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasRating> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#IsReviewedBy> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid33 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#RecommededFlight> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid34 <http://www.w3.org/2003/11/swrl#body> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#hasVerification> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#Flight> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/2003/11/swrl#head> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/noe/ontologies/2024/3/FlightSurvey#VerifiedFlight> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

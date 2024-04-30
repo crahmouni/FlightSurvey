@@ -1,0 +1,47 @@
+<h2 id="desc" class="list">Flight Satisfaction Survey Ontology - FSSO: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">The FlightSurvey ontology focuses on collecting and analyzing passenger feedback on their flight experiences. This ontology includes several main classes:
+
+- FlightEntity: Represents an individual flight, including details such as departure, arrival, duration, and aircraft type.
+- Flight: Includes all specific details about the flight, such as flight origin, destination, and the aircraft used.
+- Origin: Represents the departure airport or city for the flight.
+- Destination: Represents the arrival airport or city for the flight.
+- Aircraft: Specific to the type of aircraft used for the flight, including model and capacity.
+- AirlineEntity: Represents an airline company or carrier that operates flights. Includes information about airline names.
+- Airline: The airline company offering the flight, responsible for all flight operations.
+- PassengerEntity: Represents an individual passenger. Contains information about the type of traveler and feedback related to flights.
+- Passenger: Information about the people flying, including personal details like age and frequent flyer status.
+- Author: The person who writes and submits a comment about the flight. Can be a passenger.
+- Review: Associates a review with the specific flight it evaluates. Includes subclasses such as Comment, CommentTitle, Connectivity, Entertainment, OverallRating, and Seat that represent different aspects of the review.
+- PopularDestinationFlight: Indicates that a destination is frequently selected by travelers.
+- RecommendedFlight: Indicates whether the passenger would recommend the flight to others.
+- Service: Represents any service provided during the flight, such as meals, beverages, and additional assistance.
+- TypeOfTraveler: Represents categories of travelers, such as business, leisure, or others, indicating the purpose of the travel.
+- Verification: Represents the processes to verify the authenticity of comments to ensure they are from genuine passengers.
+- VerifiedFlight: Indicates that the flight has been verified by a passenger.
+
+Object property:
+
+- AirplaneModel: Indicates the model of the aircraft in which the flight was conducted.
+- FliesFrom: Indicates the departure airport or city for the flight.
+- FliesTo: Indicates the destination airport or city for the flight.
+- HasPassenger: Indicates that a specific passenger was on a flight.
+- IsDestinationOf: Indicates that a geographic location is the arrival point of a flight.
+- IsOriginOf: Indicates that a geographic location is the departure point of a flight.
+- IsPassengerOf: Indicates the flights on which a passenger has been.
+- IsReviewedBy: Associates a flight with a specific review provided by a passenger.
+- IsTravelerType: Indicates the type of traveler the individual is.
+- IsTypeOfTraveler: Indicates the type of passenger.
+- OperatedBy: Indicates the airline operating a flight.
+- OperatesFlight: Indicates the flights operated by an airline.
+- Reviews: Associates a review with the specific flight it evaluates.
+- WereConductedUsing: Indicates the flights that were conducted using a specific model of aircraft.
+
+
+Data Property:
+
+- hasCountry: Represents the country of residence of the passenger. This property applies to the class TypeOfTraveler.
+- hasDate: Indicates the publication date of the review. This property applies to the class Review.
+- hasRating: Indicates the rating given in the review. This property can be applied to any class that involves a rating, such as Review.
+- hasVerification: Indicates whether the review has been verified. This property applies to the class Review.
+</span>
